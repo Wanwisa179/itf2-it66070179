@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function setName() {
+            const name = document.getElementById("proname");
+            const title = document.getElementById("profile-link");
+            title.innerText = name.value
+        }
+        function setImage() {
+            const nameField = document.getElementById("profileImage");
+            const link = document.getElementById("Image");
+            nameField.style.backgroundImage = "url("+link.value+")";
+        }
+    </script>
+</head>
+<body style="background-color: #C1AADF">
+    <main>
+        <div id="profileImage" class="parent">
+            <div class="child">
+            </div>
+        </div>
+        <a id="profile-link" href="https://github.com/Wanwisa179">Wanwisa179</a>
+        <div class="row">
+            <p>set profile name</p>
+            <input id="proname" type="text">
+            <button onclick="setName()">set</button>
+        </div>
+        <div class="row">
+            <p>set profile picture<picture></picture></p>
+            <input id="Image" type="text">
+            <button onclick="setImage()">set</button>
+        </div>
+        <div class="gallery">
+            <div id="bigcol" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div id="extend-col"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </main>
+</body>
+</html>

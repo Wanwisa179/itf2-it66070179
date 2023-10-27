@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+}
+
+main {
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px black solid;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.parent {
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    background-image: url(https://avatars.githubusercontent.com/u/141338747?v=4);
+    background-size: cover;
+    border-radius: 9999px;
+}
+
+.child {
+    position: absolute;
+    top: 68%;
+    left: 63%;
+    background-color: aquamarine;
+    width: 65px;
+    height: 65px;
+    border-radius: 9999px;
+}
+
+.row {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    width: 900px;
+    height: 1000px;
+}
+.gallery .image {
+    background-color: black;
+    background-position: center;
+}
+
+#extend-col {
+    grid-column: span 0.5;
+    grid-row: span 2;
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzK17aBMRvXu5Klc6DT1obUcGFCdt8Bt-kqg&usqp=CAU);
+}
+
+#profile-link {
+    color: black;
+    font-size: 48px;
+    text-decoration: none;
+}
+#profile-link:hover {
+    color: blue;
+}
+
+.gallery .image:nth-child(1) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUCFvbIIZsSAgfk8nd0_391Ztcxwhf0Djq3w&usqp=CAU);
+}
+
+.gallery .image:nth-child(2) {
+    background-size: cover;
+    background-image: url(https://imgix.ranker.com/list_img_v2/18020/2378020/original/2378020-u1?fit=crop&fm=pjpg&q=80&dpr=2&w=1200&h=720);
+}
+
+.gallery .image:nth-child(3) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8n6KbWpMEMqA3aRrrIkjkrwZG6CFGFmv7Xg&usqp=CAU);
+}
+
+.gallery .image:nth-child(4) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQlI2XhLSywhdeXzSSfymDv4pJuiGeNvawSA&usqp=CAU?q=tbn:ANd9GcTyIFikgCSRKdfLXDWJu_wVqLnGyjN3H9_AmQ&usqp=CAU);
+}
+
+.gallery .image:nth-child(5) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG8xreGzh_exPpf-lV1GXusc-OP5Yc7Rg0Ut02lEw_AyAn_VdvMexJmwE6yfDcaH3J7E8&usqp=CAU);
+}
+
+.gallery .image:nth-child(6) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIKzgE6bywrXzM6YDxlplnZ1v_yx53hlEvyQ&usqp=CAU);
+}
+
+.gallery .image:nth-child(7) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZU4adrCv4P75iwIzxUN7FjVVtOX661SoPyA&usqp=CAU);
+}
+
+.gallery .image:nth-child(8) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU_12AGbyrAkJERz7dXt2Zw95XSzo0tWDeAw&usqp=CAU);
+}
+
+.gallery .image:nth-child(9) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw5RZ0lBaBvaq3D6nIKA-E159u9Xv6tcevFQ&usqp=CAU);
+}
+
+.gallery .image:nth-child(10) {
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnxVF3UQz-mwCZPDbYgMAInP8ksLHr7bP04nov99W2B3OfvCiaaiRShNxFO8zG3_pMTGI&usqp=CAU);
+}
+
+.username {
+    color: black;
+}
+
+#bigcol {
+    grid-column: span 2;
+    grid-row: span 1;
+}
